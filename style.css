@@ -61,7 +61,6 @@ button {
     cursor: pointer;
 }
 
-/* Hides the button until a result appears */
 [hidden] {
     display: none;
 }
@@ -72,7 +71,6 @@ footer {
     font-size: 13px;
 }
 
-/* Makes the page fit smaller screens */
 @media (max-width: 500px) {
     h1 {
         font-size: 35px;
