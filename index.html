@@ -1,40 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
+    <!-- Makes the website work on phones -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>What's Your Mood?</title>
 
-    <!-- Connects the CSS file -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Margarine&display=swap" rel="stylesheet">
+
+    <!-- Connects CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>What's Your <span>MOOD?</span></h1>
+    <!-- Top navigation -->
+    <header>
+        <div class="logo">MOOD<br>READER</div>
 
-    <p class="subtitle">THE WORLD'S LEAST ACCURATE MOOD READER</p>
+        <div class="top-pill">
+            100% NOT ACCURATE
+        </div>
 
-    <p>Let the universe decide your mood...</p>
+        <div class="small-text">
+            ✦ TRUST THE UNIVERSE ✦
+        </div>
+    </header>
 
-    <!-- Crystal ball button -->
-    <button id="crystal-ball">
-        <span>✦</span>
-        <p>CLICK ME!</p>
-    </button>
 
-    <!-- Mood result appears here -->
-    <h2 id="mood"></h2>
-    <p id="description"></p>
-    <p id="accuracy"></p>
+    <!-- Main website -->
+    <main>
 
-    <button id="try-again" hidden>TRY AGAIN</button>
+        <!-- HUGE TITLE -->
+        <section class="hero">
 
-    <footer>Good vibes only! </footer>
+            <div class="title-box">
+                <p class="eyebrow">THE WORLD'S LEAST ACCURATE</p>
 
-    <!-- Connects the JavaScript file -->
+                <h1>
+                    WHAT'S<br>
+                    YOUR<br>
+                    <span>MOOD?</span>
+                </h1>
+            </div>
+
+            <div class="side-note">
+                <span>✦</span>
+                <p>
+                    CLICK THE<br>
+                    BALL.<br>
+                    KNOW YOUR<br>
+                    FATE.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Crystal Ball Section -->
+        <section class="reader-section">
+
+            <div class="instruction-box">
+                <p id="instruction">
+                    YOUR MOOD IS WAITING.
+                </p>
+            </div>
+
+
+            <!-- Crystal Ball -->
+            <button id="crystal-ball" aria-label="Click the crystal ball to reveal your mood">
+
+                <div class="ball-shine"></div>
+
+                <div class="ball-stars">
+                    ✦
+                    <span>✧</span>
+                    ✦
+                </div>
+
+                <div class="ball-text">
+                    CLICK<br>ME
+                </div>
+
+            </button>
+
+
+            <div class="click-label">
+                <span>↑</span>
+                CONSULT THE UNIVERSE
+                <span>↑</span>
+            </div>
+
+        </section>
+
+
+        <!-- Result -->
+        <section id="result" class="result-box" hidden>
+
+            <div class="result-top">
+                <p>YOUR MOOD IS:</p>
+                <span id="accuracy">ACCURACY: 0%</span>
+            </div>
+
+            <h2 id="mood"></h2>
+
+            <p id="description"></p>
+
+            <button id="try-again" class="pill-button">
+                READ ME AGAIN ↗
+            </button>
+
+            <button id="reset" class="pill-button secondary-button">
+                START OVER
+            </button>
+
+        </section>
+
+
+        <!-- Bottom information -->
+        <section class="bottom-grid">
+
+            <div class="info-card pink-card">
+                <span>01</span>
+                <h3>ASK</h3>
+                <p>
+                    Consult the crystal ball for highly questionable
+                    emotional analysis.
+                </p>
+            </div>
+
+            <div class="info-card green-card">
+                <span>02</span>
+                <h3>RECEIVE</h3>
+                <p>
+                    Get a completely random diagnosis from the universe.
+                </p>
+            </div>
+
+            <div class="info-card purple-card">
+                <span>03</span>
+                <h3>ACCEPT</h3>
+                <p>
+                    Whether it's accurate or not is between you and fate.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>GOOD VIBES ONLY :)</p>
+        <p>© THE UNIVERSE, PROBABLY</p>
+    </footer>
+
+
+    <!-- Connects JavaScript -->
     <script src="script.js"></script>
 
 </body>
+
 </html>
